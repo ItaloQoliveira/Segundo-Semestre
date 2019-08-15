@@ -35,3 +35,29 @@ int main(){
 
     return 0;
 }
+
+void media1(int n){
+    int i,numeros[50],somatotal=0;
+    float resultado;
+    for (i=0;i<n;i++){
+        printf("\nInsira o número:");
+        scanf("%d",&numeros[i]);
+        somatotal+=numeros[i];
+    }
+    resultado=somatotal/n;
+    printf("A média de todos os %d numeros é de %f ",n,resultado);
+}
+
+void media2 (int n){
+
+}
+
+void media3 (int n){
+
+
+}
+
+void media4 (int n){
+
+    
+}

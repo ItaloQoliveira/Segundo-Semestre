@@ -31,6 +31,8 @@ int main(){
     case 4:
         media4(n);
     default:
+        printf("Opção invalida\n");
+        main();
         break;
     }
 
@@ -81,6 +83,15 @@ void media3 (int n){
 }
 
 void media4 (int n){
-
-
+    int i;
+    float numeros[50],somainversos=0,resultado;
+    for(i=0;i<n;i++){
+        printf("\nInsira o numero:");
+        scanf("%f",&numeros[i]);
+        numeros[i]=1/numeros[i];
+        somainversos+=numeros[i];
+    }
+    somainversos=somainversos/n;
+    resultado=pow(somainversos,-1);
+    printf("O resultado da média é de %.2f",resultado);
 }

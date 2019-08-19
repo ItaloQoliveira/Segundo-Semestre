@@ -12,16 +12,14 @@ void media4 (int n);
 
 void main(){
     int op;
-    int n,j;
+    int n;
 
-    do{
-        j=0;
+    do{ 
         printf("\nQuantos valores serão utilizados?\n");
         scanf("%d",&n);
-        if((n<4) || (n>10) ){
-            j=1;
-        }
-    }while(j=1);
+    
+    }while((n>10)||(n<4) );
+
     printf("Qual media deseja calcular?\n 1-Media aritmetica simples\n 2-Media aritmetica ponderada\n 3-Media geometrica\n 4-Media harmonica\n");
     scanf("%d",&op);
     switch (op){
@@ -37,10 +35,9 @@ void main(){
         media4(n);
     default:
         printf("Opção invalida\n");
-        main();
         break;
     }
-    
+
 }
 
 void media1(int n){

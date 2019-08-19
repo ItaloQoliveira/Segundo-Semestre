@@ -5,18 +5,23 @@
 #include <stdlib.h>
 #include <math.h>
 
-void media1 (int n);
+void media1 (int n); //cada media
 void media2 (int n);
 void media3 (int n);
 void media4 (int n);
 
-int main(){
+void main(){
     int op;
-    int n;
-    
-    printf("Quantos valores serão utilizados?\n");
-    scanf("%d",&n);
-    
+    int n,j;
+
+    do{
+        j=0;
+        printf("\nQuantos valores serão utilizados?\n");
+        scanf("%d",&n);
+        if((n<4) || (n>10) ){
+            j=1;
+        }
+    }while(j=1);
     printf("Qual media deseja calcular?\n 1-Media aritmetica simples\n 2-Media aritmetica ponderada\n 3-Media geometrica\n 4-Media harmonica\n");
     scanf("%d",&op);
     switch (op){
@@ -35,8 +40,7 @@ int main(){
         main();
         break;
     }
-
-    return 0;
+    
 }
 
 void media1(int n){

@@ -49,10 +49,10 @@ void metodo1(int n){
     printf("%f",total*2);
 }
 void metodo2(int n){
-    int i,nbaixo=3,contador;
+    int i,nbaixo=1;
     float total=1;
     for(i=0;i<n;i++){
-        if (contador%2==0){
+        if (nbaixo%2==0){
             total+=(1.0/nbaixo);
         }else{
             total-=(1.0/nbaixo);

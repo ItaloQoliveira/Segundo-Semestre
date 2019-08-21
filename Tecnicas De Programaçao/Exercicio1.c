@@ -12,7 +12,7 @@ void metodo4(int n);
 
 void main(){      //Devido a precisão dos números, tá tudo estranho.
     int op,n;
-    printf("\nQual será o número de vezes que o algoritmo irá rodar?\n ");
+    printf("\nQuantos termos voce quer que sejam usados?\n ");
     scanf("%d",&n);
     printf("1-Wallis\n2-Gregory\n3-Euler1\n4-Euler2\n ");
     scanf("%d",&op);
@@ -37,12 +37,14 @@ void main(){      //Devido a precisão dos números, tá tudo estranho.
 }   
 void metodo1(int n){
     int i;
-    float ncima=2.2,nbaixo=1.3,total=1;
+    float ncima1 = 2, ncima2 = 2, nbaixo1 = 1, nbaixo2 = 3 ,total=1;
 
     for(i=0;i<n;i++){
-        total*=(ncima/nbaixo);
-        ncima+=2.2;
-        nbaixo=2.2;
+        total*=(ncima1*ncima2)/(nbaixo1*nbaixo2);
+        ncima1 += 2;
+        ncima2 += 2;
+        nbaixo1 += 2;
+        nbaixo2 += 2;
     }
     printf("%f",total*2);
 }

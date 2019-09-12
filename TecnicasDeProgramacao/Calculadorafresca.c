@@ -42,7 +42,7 @@ float divisao(float a,float b){
 void verificar (char valor[]){
     if(isdigit(valor[1])){
      printf("Valor invalido, insira um novo numero");
-     printf("%s",valor)   
+     printf("%s",valor)  ;
     }else {
         printf("ok");
     }

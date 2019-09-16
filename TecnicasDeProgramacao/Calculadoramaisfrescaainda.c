@@ -16,16 +16,16 @@ int main(){
         
         switch (operador){
             case '+':
-                printf("%.2f\n",soma((v1),(v2)));
+                printf("%.1f%c%.1f= %.1f\n",v1,operador,v2,soma((v1),(v2)));
                 break;
             case '-':
-                printf("%.2f\n",subt((v1),(v2)));
+                printf("%.1f%c%.1f= %.1f\n",v1,operador,v2,subt((v1),(v2)));
                 break;
                 case '*':
-                printf("%.2f\n",multi((v1),(v2)));
+                printf("%.1f%c%.1f= %.1f\n",v1,operador,v2,multi((v1),(v2)));
                 break;
             case '/':
-                printf("%.2f\n",divisao((v1),(v2)));
+                printf("%.1f%c%.1f= %.1f\n",v1,operador,v2,divisao((v1),(v2)));
                 break;
             default:
                 printf("\nOpção invalida\n");

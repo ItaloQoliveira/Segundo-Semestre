@@ -10,7 +10,7 @@ int main(){
     char varArquivo,operador;
     float v1,v2;
     FILE *arg;
-    arg=fopen("arqcalc.txt","r");
+    arg=fopen("/home/italo/SegundoSemestre/Segundo-Semestre/TecnicasDeProgramacao/arquivostxt/arqcalc.txt","r");
     varArquivo= fscanf(arg,"%f %c %f",&v1,&operador,&v2);
     while(varArquivo!=EOF){    
         

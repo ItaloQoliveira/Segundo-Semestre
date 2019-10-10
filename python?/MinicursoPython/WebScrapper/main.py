@@ -40,7 +40,7 @@ if __name__ == '__main__':
             dados_filmes= scrapper.get_lancamentos()
             desenha_cabecalho(opcoes[2])
 
-            for dado in dados_filmes:
+            for dados in dados_filmes:
                 nota,nome,data_estreia = dados
                 print(f'{nota} - {nome} - {data_estreia} ')
         

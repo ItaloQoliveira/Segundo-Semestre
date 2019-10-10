@@ -30,7 +30,7 @@ class RottenScrapper(Scrapper):
         if id_secao=='New-On-Tv':
             div_tv=self.dom.find('h2',string ='New TV Tonight').parent.table
         else:
-            div_tv-self.dom.find(id = id_secao)
+            div_tv=self.dom.find(id = id_secao)
         dados =[]
 
         for linha in div_tv.find_all('tr'):

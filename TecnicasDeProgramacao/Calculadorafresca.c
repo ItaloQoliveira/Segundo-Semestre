@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-void verificar(char[]);
 float soma(float,float);
 float divisao(float,float);
 float multi(float,float);
 float subt(float,float);
 int main(int tam,char *valor[] ){
-    verificar(*valor);
     switch (*valor[2]){
     case '+':
         printf("%.2f",soma(atof(valor[1]),atof(valor[3])));
@@ -38,13 +36,4 @@ float multi(float a,float b){
 }
 float divisao(float a,float b){
     return a/b;
-}
-void verificar (char valor[]){
-    if(isdigit(valor[1])){
-     printf("Valor invalido, insira um novo numero");
-     printf("%s",valor)  ;
-    }else {
-        printf("ok");
-    }
-
 }

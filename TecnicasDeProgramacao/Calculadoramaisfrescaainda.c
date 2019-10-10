@@ -34,7 +34,7 @@ int main(){
         varArquivo= fscanf(arg,"%f %c %f",&v1,&operador,&v2);
     }
 
-
+    fclose(arg);
 
     
 }

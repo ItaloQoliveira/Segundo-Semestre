@@ -1,0 +1,21 @@
+import turtle
+mypen=turtle.Turtle()
+def triangulo(q):
+    mypen.speed(1)
+    mypen.pendown()
+    mypen.goto(0,0)
+    mypen.forward(150)
+    mypen.left(120)
+    mypen.forward(150)
+    mypen.left(120)
+    mypen.forward(150)
+    mypen.speed(1)
+    mypen.pendown()
+    mypen.goto(0,0)
+    mypen.forward(75)
+    mypen.left(120)
+    mypen.forward(75)
+    mypen.left(120)
+    mypen.forward(75)
+
+triangulo(0)
